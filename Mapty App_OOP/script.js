@@ -279,7 +279,10 @@ class App {
     localStorage.removeItem('workouts');
     location.reload();
   }
-  _resetWorkout() {}
+  _resetWorkout() {
+    localStorage.removeItem('workouts');
+    location.reload();
+  }
 }
 
 const app = new App();
